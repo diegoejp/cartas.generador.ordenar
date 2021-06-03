@@ -1,1 +1,71 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+.card {
+  background-color: white;
+  height: 95px;
+  width: 70px;
+  /* border-radius: 5px; */
+  margin-right: 5px;
+}
+.card p {
+  margin: 0;
+}
+.arriba {
+  padding-left: 5px;
+}
+.abajo {
+  text-align: start;
+  padding-left: 5px;
+
+  /*
+   rotar
+  */
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+.medio {
+  font-size: 30px;
+  text-align: center;
+}
+.red {
+  color: red;
+}
+.black {
+  color: black;
+}
+.input {
+  border-radius: 5px;
+  width: 50px;
+}
+
+.rotar7 {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+
+  /* font-size: 40px; */
+  /* position: relative; */
+  /* text-align: center; */
+  /* top: 100px; */
+}
+.a {
+  /*
+    hola*/
+  text-decoration: none;
+}
