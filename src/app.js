@@ -23,6 +23,9 @@ let inputOr = document.querySelector("#original");
 
 //Llamar boton clear
 let btnClear = document.querySelector("#clear");
+
+//lamar boton sort
+let btnSelection = document.querySelector("#selecction");
 //carta aleatoria
 function cartaAleatoria() {
   return numeros[Math.floor(Math.random() * 13)];
@@ -45,7 +48,11 @@ window.onload = function() {
   });
 
   btnSort.addEventListener("click", () => {
-    console.log(ordenarImprimir());
+    ordenarImprimir();
+  });
+
+  btnSelection.addEventListener("click", () => {
+    selectionalgori();
   });
 };
 
@@ -176,6 +183,26 @@ function ordenarImprimir() {
     }
 
     wall--;
+  }
+  return arregloDraw;
+}
+
+function selectionalgori() {
+  let min = 0;
+  while (min < arregloDraw.length - 1) {
+    for (let i = min + 1; i < arregloDraw.length; i++) {
+      if (arregloDraw[min][0] > arregloDraw[i][0]) {
+        let aux = arregloDraw[min][0];
+        let auxs = arregloDraw[min][1];
+        arregloDraw[min][0] = arregloDraw[i][0];
+        arregloDraw[min][1] = arregloDraw[i][1];
+        arregloDraw[i][0] = aux;
+        arregloDraw[i][1] = auxs;
+        imprimirBubbles();
+        console.log(arregloDraw);
+      }
+    }
+    min++;
   }
   return arregloDraw;
 }
